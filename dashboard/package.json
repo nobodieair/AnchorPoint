@@ -4,13 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "test:browser": "playwright test",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "test": "vitest run",
     "test:e2e": "cypress run"
   },
@@ -56,7 +56,7 @@
     "storybook": "^10.5.5",
     "tailwindcss": "^4.3.1",
     "typescript": "^5.5.3",
-    "vite": "^6.4.3",
+    "vite": "^8.1.5",
     "vitest": "^4.1.7"
   }
 }
